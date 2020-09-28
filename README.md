@@ -3,6 +3,10 @@
 
 React Js Fundamentals Course 2020
 
+## 0925
+1.이미지파일 import
+
+
 ## 0918
 >1. 커포넌트리 무엇인지 알아보고 JSX 학습
 >2. JSX는 단지 HTML과 자바스크립트를 조합한 문법
