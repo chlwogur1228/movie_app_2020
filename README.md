@@ -3,12 +3,21 @@
 
 React Js Fundamentals Course 2020
 
+## 1016
+>1. constructor()함수가 render()함수보다 먼저 실행됨.
+>2. render()함수가 componentDidMount()함수보다 먼저 실행됨.
+>3. constructor() - render() - componentDidMount()
+>4. 영화 api
+>5. axios 설치, google web store 에서 json viewer 설치 하면    json를 볼 수 있음
+>6. 시간이 필요하다는 것을 알리기위해선 async, await 키워드가 필요함.
+
 
 ## 1007
 >1. prop은 정적 데이터에서 사용 가능
 >2. state는 동적 데이터를 말한다
 >3. 클래스형 컴포넌트에서 리턴 하기 위해선 render()함수를 사용함
 >4. 함수 인자로 함수르 전달 하는 것이 좋다.
+
 
 ## 0925
 >1. 이미지파일 import
