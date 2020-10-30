@@ -6,14 +6,16 @@ class App extends React.Component{
         console.log("constructor!");
     }
 
+    //constructor > render > componentDidMout 순으로 실행
+    // mount 생명 주기 함수
     state = {
         count : 0,
     }
     add = () => {
         //console.log('Add');
         //this.setState({ count : this.state.count +1 });
-        this.setState(current => ({ 
-            count: current.count + 1 
+        this.setState(current => ({  //current 에는 현재 state가 넘어옴
+            count: current.count + 1 // 그 state의 count에 1을 더함
         }) );
     }
     minus = () => {

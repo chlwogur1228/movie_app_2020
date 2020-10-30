@@ -3,11 +3,16 @@ import axios from 'axios';
 class App extends React.Component{
     state = {
         isLoading : true,
-        movies : [], 
+        movies : [] 
     };
     getMovies = async() => {
-        const movies = await axios.get('https://yts-proxy.now.sh/list_movies.json'); 
-       }
+        const {
+            data: {
+                data: {movies}
+            },
+        }  = await axios.get('https://yts-proxy.now.sh/list_movies.json'); 
+        this.setState({movies, isLoading: false});
+    }
 
     componentDidMount() {
         // 영화 데이터 로딩
@@ -15,11 +20,11 @@ class App extends React.Component{
         }
 
     render()  {
-        console.log("render");
-        const {isLoading} = this.state;
+        //console.log("render");
+        const {isLoading, movies} = this.state;
         return (
             <div>
-                {isLoading ? 'Loading...' : "We are ready"}
+                {isLoading ? 'Loading...' : movies.map((movie) => this.state)}
                 </div>
         );   
     }
