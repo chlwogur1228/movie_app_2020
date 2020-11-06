@@ -3,6 +3,17 @@
 
 React Js Fundamentals Course 2020
 
+##1106
+>1. HTML의 class와 자바스크립트의 class 라는 이름이 겹치면 리액트가 혼란스러울 수 있다.
+>2. class -> className 변경
+>3.
+
+
+## 1030
+>1. 배열에 data를 이용해 데이터 추출
+>2. 받은 데이터를 setState로 저장
+>3. PropTypes 을 이용해 검사
+
 ## 1016
 >1. constructor()함수가 render()함수보다 먼저 실행됨.
 >2. render()함수가 componentDidMount()함수보다 먼저 실행됨.

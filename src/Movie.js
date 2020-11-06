@@ -1,20 +1,28 @@
-import React from 'React';
+import React from 'react';
 import PropTypes from 'prop-types';
+import './Movie.css';
 
 
-
-function Movie({id, title, year, sumary, poster}) {
-    return <h1>{title}</h1>
+function Movie({title, year, summary, poster, genres}){
+    return(
+     <div>
+     <img src={poster} alt={title} title={title} />   
+     <div className="movie-data">
+         <h3 className="movie-title">{title}</h3>
+         <h5 className="movie-year">{year}</h5>
+         <p className="movie-summary">{summary}</p> 
+     </div> 
+     </div>
+    ); 
 }
 
+
 Movie.propTypes = {
-    id : PropTypes.number.isRequired,
-    yesr : PropTypes.string.isRequired,
-    title : PropTypes.string.isRequired,
-    sumary: PropTypes.string.isRequired,
-    poster : PropTypes.string.isRequired,
+    year: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
+    poster: PropTypes.string.isRequired,
+    genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Movie;
-
-
