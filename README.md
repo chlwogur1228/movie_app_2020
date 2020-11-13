@@ -3,7 +3,10 @@
 
 React Js Fundamentals Course 2020
 
-##1106
+## 1113
+>1. Route에는 2가지 props를 전달할 수 있다. 하나는 URL을 위한 path props고, 또 하나는 URL에 맞는 컴포넌트를 불러 주기 위한 component props이다.
+>2. React-router-dom은 여러 종류의 라우터를 제공하는데, 우리는 HashRouter와 Route 컴포넌트를 사용한다.
+## 1106
 >1. HTML의 class와 자바스크립트의 class 라는 이름이 겹치면 리액트가 혼란스러울 수 있다.
 >2. class -> className 변경
 >3.
