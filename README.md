@@ -3,9 +3,16 @@
 
 React Js Fundamentals Course 2020
 
+# 1120
+>1. 리다이렉트 기능을 사용하기 위해서는 route props의 history 키를 활용해야 한다.
+>2. history키에는 push, go, goBack, goForward와 같은 키가 있으며, 그 키에는 URL을 변 경해 주는 함수들이 있다.
+
+
 ## 1113
 >1. Route에는 2가지 props를 전달할 수 있다. 하나는 URL을 위한 path props고, 또 하나는 URL에 맞는 컴포넌트를 불러 주기 위한 component props이다.
 >2. React-router-dom은 여러 종류의 라우터를 제공하는데, 우리는 HashRouter와 Route 컴포넌트를 사용한다.
+
+
 ## 1106
 >1. HTML의 class와 자바스크립트의 class 라는 이름이 겹치면 리액트가 혼란스러울 수 있다.
 >2. class -> className 변경
