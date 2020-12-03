@@ -3,7 +3,21 @@
 
 React Js Fundamentals Course 2020
 
-# 1120
+
+## 1201
+>1. 리액트 문서 주요개념
+>2. WILLMOUNT, DIDMOUT, WILLUNMOUNT
+
+
+## 1127
+>1. 조작하는 내용들이 캡슐 안에 들어가 있는 것 같은 형식 - 캡슐화
+>2. super
+>3. 스크립트를 다이렉트로 수정할 수 없어서 setState 사용함
+>4. DidMount() 첫번째 렌더링이 끝나고 실행될 메소드를 지정
+>5. setInterval([수행할 작업],[간격]) 
+
+
+## 1120
 >1. 리다이렉트 기능을 사용하기 위해서는 route props의 history 키를 활용해야 한다.
 >2. history키에는 push, go, goBack, goForward와 같은 키가 있으며, 그 키에는 URL을 변 경해 주는 함수들이 있다.
 
