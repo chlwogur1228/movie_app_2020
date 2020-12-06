@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>counter page</title>
+</head>
+<body>
+    <h2 id="number" method="POST">0</h2>
+    <div>
+      <button id="increase">+1</button>
+      <button id="decrease">-1</button>
+ 
+  
+  </form>
+  <button class="ajaxsend">결과 전송</button>
+  <script src="./first.js"></script>
+  <script>
+    document.querySelector('.ajaxsend').addEventListener('click', function() {
+      var inputData = number.innerText; // 이메일 입력값
+      sendAjax('http://127.0.0.1:3000/ajax_send_value', inputData);
+    });
+
+    function sendAjax(url, data) {
+      var data = {'email':data};
+      data = JSON.stringify(data);
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      // json 형태의 데이터를 보낼 때 필요한 설정
+      xhr.setRequestHeader('Content-Type', "application/json");
+      xhr.send(data);
+      }
+  </script>
+</body>
+</html>

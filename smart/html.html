@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .character { color:black; }
+      .word { color:gray; }
+    </style>
+
+    <script>
+      var req = new XMLHttpRequest();
+      req.onreadystatechange = function a() {
+        console.log(this.readyState, this.status);
+        if (this.readyState == 4) {
+          console.log(this.response);
+          var data = JSON.parse(this.response); // 넘어온 JSON 문자열을 js 객체로 변환
+    for (var i in data) { // data는 배열 형태
+      var t = document.getElementById("template").cloneNode(true); // true -> 자식노드까지 복제
+      t.removeAttribute("id"); // id 속성 제거 (template라는 값 자체가 사라짐)
+      t.children[0].innerText = data[i].id; // json 배열 -> html 복사
+      t.children[1].innerText = data[i].msg; // json 배열 -> html 복사 
+      document.body.appendChild(t); // html에 추가 (주인공 명대사 아래에)
+    }
+        }
+      }
+      req.open("GET", "./json_data.txt")
+      req.send();
+    </script>
+  </head>
+  <body>
+    <p id="template">
+      <span class="character">주인공</span> : <span class="word">명대사</span>
+    </p>
+  </body>
+</html>
